@@ -1,0 +1,99 @@
+.footer {
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-left svg {
+    margin: 0px -15px;
+}
+
+.footer-top-left p {
+    font-size: 16px;
+    max-width: 410px;
+}
+
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-email-input {
+    display: flex;
+    gap: 20px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    background: #323232;
+}
+
+.footer-email-input img {
+    width: 22px;
+    position: absolute;
+    right: 570px;
+}
+
+.footer-email-input input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #a0a0a0;
+    font-family: "Share Tech", sans-serif;
+    font-size: 18px;
+}
+
+.footer-email-input:hover {
+    border: 2px solid #fff;
+}
+
+.footer-subscribe {
+    font-size: 16px;
+    padding: 18px 40px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-subscribe:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+/* Responsiveness */
+
+@media(max-width:768px) {
+    .footer {
+        margin: 50px 6%;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-email-input img {
+        left: 64px;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+}
